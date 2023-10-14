@@ -1,0 +1,33 @@
+#查询Git版本
+git -v
+
+#配置用户名
+git config --global user.name "Forrest Zeng"
+
+#配置用户邮箱
+git config --global user.email forrest36@163.com
+
+#保存用户配置信息
+git config --global credential.helper store
+
+#查看用户配置信息
+git config --global --list
+
+#创建⼀个新的本地仓库（省略project-name则在当前⽬录创建。
+git init <project-name>
+
+git clone <url>
+#克隆⼀个远程仓库。
+git clone https://github.com/geekhall-laoyang/remote-repo.git
+#报错
+error: RPC failed; curl 28 OpenSSL SSL_read: Connection was reset, errno 10054
+#设置全局禁用Git SSL验证，针对所有远程服务器全局执行。这样我们就可以直接跳过验证直接下载了，再次执行命令就不会再出现上述错误了。
+git config --global http.sslVerify "false"
+
+warning: in the working copy of ‘...‘, LF will be replaced by CRLF the next time Git touche
+#执行git add .的时候出现的警告(没有处理这个告警，之后再说)
+git config --global core.autocrlf true
+#提交时转换为LF，检出时转换为CRLF：
+
+git commit -m "message"
+#提交所有暂存区的⽂件到本地仓库。
