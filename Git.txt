@@ -41,3 +41,19 @@ git status
 
 git log --oneline
 #查看提交历史，--oneline表示简介模式。
+
+git reset --soft <commit-id>
+git reset --hard <commit-id>
+git reset --mixed <commit-id>
+#<commit-id>
+HEAD^
+#回退到上一个版本
+
+git diff
+#查看未暂存的⽂件更新了哪些部分。
+
+git diff HEAD
+#比较工作区与版本库之间的差异
+
+git diff --cached
+#比较暂存区与版本库之间的差异
