@@ -57,3 +57,19 @@ git diff HEAD
 
 git diff --cached
 #比较暂存区与版本库之间的差异
+
+git diff HEAD~2 HEAD
+#比较前两个版本与当前版本之间的差异
+
+rm file;git add file 
+#先从工作区删除文件，然后再暂存删除文件
+
+git rm <file>
+#把文件从工作区和暂存区同时删除
+
+git rm --cached <file>
+#把文件从暂存区删除，但保留在当前工作区中
+
+git rm -r*
+#递归删除某个目录下的所有子目录和文件
+#删除后不要忘记提交
