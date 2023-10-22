@@ -31,3 +31,13 @@ git config --global core.autocrlf true
 
 git commit -m "message"
 #提交所有暂存区的⽂件到本地仓库。
+
+git add . #文件夹下所有文件
+git add *.txt #所有txt文件
+#提交至暂存区的通配符命令
+
+git status
+#查看仓库状态，列出还未提交的新的或修改的⽂件。
+
+git log --oneline
+#查看提交历史，--oneline表示简介模式。
