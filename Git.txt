@@ -93,3 +93,20 @@ git pull <远程仓库别名><远程分支名>:<本地分支名>
 
 gitee.com #码云
 gitlab.com #Gitlab
+
+git branch
+#查看分支列表
+
+git branch branch-name
+#创建分支
+
+git switch branch-name
+#切换分支
+
+git merge branch-name
+#合并分支
+
+git branch -d branch-name #已合并
+git branch -D branch-name #未合并
+#删除分支
+
