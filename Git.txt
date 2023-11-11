@@ -5,7 +5,7 @@ git -v
 git config --global user.name "Forrest Zeng"
 
 #配置用户邮箱
-git config --global user.email forrest36@163.com
+git config --global user.email Forrest36@163.com
 
 #保存用户配置信息
 git config --global credential.helper store
@@ -73,3 +73,23 @@ git rm --cached <file>
 git rm -r*
 #递归删除某个目录下的所有子目录和文件
 #删除后不要忘记提交
+
+git remote add <远程仓库别名><远程仓库地址>
+#添加远程仓库
+git remote add origin git@github.com:Forrest36/Forrest.git
+
+git branch -M main
+#命令用于将本地分支重命名为 main
+
+git push -u <远程仓库别名><分支名>
+git push -u origin main
+
+git remote -v
+#查看远程仓库
+
+git pull <远程仓库别名><远程分支名>:<本地分支名>
+#                      相同可省略冒号后面部分
+#拉取远程仓库内容
+
+gitee.com #码云
+gitlab.com #Gitlab
