@@ -110,3 +110,6 @@ git branch -d branch-name #已合并
 git branch -D branch-name #未合并
 #删除分支
 
+git pull --rebase <远程仓库别名><远程分支名>
+#该命令的意思是把远程库中的更新合并到（pull=fetch+merge）本地库中，
+#–-rebase的作用是取消掉本地库中刚刚的commit，并把他们接到更新后的版本库之中。
